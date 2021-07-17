@@ -30,7 +30,7 @@ export const LocationTemplate = ({
               {title} Kyudo Club
             </h1>
             <p>
-              We practice at <a href={googleMaps}>{address}. Our club president is <strong>{president}</strong></a>
+              We practice at <a href={googleMaps}>{address}</a>. Our club president is <strong>{president}</strong>
             </p>
             <p>For enquiries please contact:</p>
             <p>
