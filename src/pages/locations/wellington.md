@@ -1,5 +1,5 @@
 ---
-templateKey: dojo-page
+templateKey: location-page
 title: Wellington
 path: /wellington
 address: Minoh Friendship House - 38 Normandale Road, Lower Hutt

@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { DojoPageTemplate } from '../../templates/dojo-page'
+import { LocationPageTemplate } from '../../templates/location-page'
 
-const DojoPagePreview = ({ entry, widgetFor }) => {
+const LocationPagePreview = ({ entry, widgetFor }) => {
   return (
-    <DojoPageTemplate
+    <LocationPageTemplate
       content={widgetFor('body')}
       title={entry.getIn(['data', 'title'])}
     />
   )
 }
 
-DojoPagePreview.propTypes = {
+LocationPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default DojoPagePreview
+export default LocationPagePreview

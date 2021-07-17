@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const DojoTemplate = ({
+export const LocationTemplate = ({
   title,
   helmet,
   address,
@@ -45,7 +45,7 @@ export const DojoTemplate = ({
   )
 }
 
-DojoTemplate.propTypes = {
+LocationTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   helmet: PropTypes.object,
   address: PropTypes.string.isRequired,
@@ -58,17 +58,17 @@ DojoTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const Dojo = ({ data }) => {
+const Location = ({ data }) => {
   const { markdownRemark: post } = data
   const field = post.frontmatter;
 
   return (
     <Layout>
-      <DojoTemplate
+      <LocationTemplate
         content={post.html}
         contentComponent={HTMLContent}
         helmet={
-          <Helmet titleTemplate="%s | Dojo">
+          <Helmet titleTemplate="%s | Location">
             <title>{`${field.title} - Kyudo Club`}</title>
             <meta
               name="description"
@@ -88,16 +88,16 @@ const Dojo = ({ data }) => {
   )
 }
 
-Dojo.propTypes = {
+Location.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default Dojo
+export default Location
 
 export const pageQuery = graphql`
-  query DojoByID($id: String!) {
+  query LocationByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

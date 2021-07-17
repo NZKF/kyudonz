@@ -32,16 +32,16 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-  - name: "dojo"
-    label: "Dojo"
-    folder: "src/pages/dojos"
+  - name: "location"
+    label: "Location or club"
+    folder: "src/pages/locations"
     create: true
     fields:
       - {
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "dojo-page",
+          default: "location-page",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Address", name: "address", widget: "string" }

@@ -1,5 +1,5 @@
 ---
-templateKey: dojo-page
+templateKey: location-page
 title: Auckland
 address: YMCA Panmure (Lagoon Stadium), 44 Domain Road, Panmure
 googleMaps: https://goo.gl/maps/FGsQ3X4j7Lgv8SBx6
