@@ -32,7 +32,33 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-
+  - name: "dojo"
+    label: "Dojo"
+    folder: "src/pages/dojos"
+    create: true
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "dojo-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Address", name: "address", widget: "string" }
+      - { label: "Google Maps url", name: "googleMaps", widget: "string" }
+      - { label: "Club president", name: "president", widget: "string" }
+      - { label: "Contact person", name: "contactPerson", widget: "string" }
+      - {
+          label: "Contact person's position in the club",
+          name: "contactPosition",
+          widget: "string",
+        }
+      - {
+          label: "Contact person's email",
+          name: "contactEmail",
+          widget: "string",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     files:
