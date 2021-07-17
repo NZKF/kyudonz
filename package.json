@@ -1,7 +1,7 @@
 {
   "name": "kyudonz",
   "description": "Example Gatsby, and Netlify CMS project",
-  "version": "2",
+  "version": "2.0.0",
   "author": "Prae Songprasit",
   "dependencies": {
     "gatsby": "^3.9.1",
